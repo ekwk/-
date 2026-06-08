@@ -83,4 +83,7 @@ elif app_mode == "🎲 확률 시뮬레이터":
     st.markdown("---")
 
     sim_type = st.selectbox("시뮬레이션할 대상을 선택하세요:", ["주사위 던지기", "동전 던지기"])
-    trials = st.number_input("시뮬레이션 반복 횟수를 입력하세요 (최대
+    
+    # [수정 구간] 줄바꿈 에러가 나지 않도록 가로 길이를 줄이고 인자들을 정돈했습니다.
+    trials = st.number_input(
+        "시뮬레이션
